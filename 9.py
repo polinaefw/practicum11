@@ -3,6 +3,7 @@ from collections import OrderedDict
 punctuation = ".,!?;:()\"'-—«»"
 
 def clean_word(word):
+    '''убирает из слов знаки препинания'''
     for punct in punctuation:
         word = word.replace(punct, '')
     return word.lower()
