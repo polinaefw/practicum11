@@ -1,4 +1,5 @@
 def sort_string(text):
+    '''преобразуем строку в список символов, сортируем список, превращаем обратно в строку'''
     chars = list(text)
     chars.sort()
     sorted_text = ''.join(chars)
